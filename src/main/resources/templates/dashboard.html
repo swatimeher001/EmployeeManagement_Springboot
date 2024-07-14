@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            margin-bottom: 10px;
+        }
+        .card-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to the Employee Management Dashboard</h1>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-users"></i> Employee Management</h2>
+            <div class="card-content">
+                <p>Manage and view all employees in the organization.</p>
+                <a href="/employees" class="card-link">View Employees</a>
+                <a href="/employees/new" class="card-link">Add New Employee</a>
+                <a href="/employees/edit" class="card-link">Edit Employee</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-chart-bar"></i> Employee Statistics</h2>
+            <div class="card-content">
+                <p>View graphical representations and statistics of employee data.</p>
+                <a href="#" class="card-link">View Statistics</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-calendar-alt"></i> Calendar</h2>
+            <div class="card-content">
+                <p>View important dates and events related to employees.</p>
+                <a href="#" class="card-link">View Calendar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-cog"></i> Settings</h2>
+            <div class="card-content">
+                <p>Manage system settings and preferences.</p>
+                <a href="#" class="card-link">System Settings</a>
+            </div>
+        </div>
+
+        <!-- Add more cards for additional functionalities as needed -->
+
+    </div>
+</body>
+</html>
